@@ -1,11 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import { Container, Heading } from '@chakra-ui/react'
 
-export default function Home() {
-  return (
-    <>
-      <h1>Página em construção</h1>
-    </>
-  )
+export default function Home(){
+
+    return(
+        <Container display='flex' height='90vh' justifyContent='center' alignItems='center'>
+            <Heading size='lg'>Pagina em Construcao</Heading>
+        </Container>
+    )
 }
