@@ -1,10 +1,30 @@
-import { Container, Heading } from '@chakra-ui/react'
+import { Text, Container, Heading, Box} from '@chakra-ui/react'
 
-export default function Journal(){
+import objetoteste from '../progresso.json'
 
-    return(
-        <Container display='flex' height='90vh' justifyContent='center' alignItems='center'>
-            <Heading size='lg' fontSize='50px'>Journal</Heading>
-        </Container>
-    )
-}
+export default function Journal() {
+
+    const headers = Object.keys(objetoteste)
+    return (
+        <>
+            <Container display='flex-wrap' height='90vh' justifyContent='center' alignItems='center' margin='10px'>
+                <Heading size='2xl'>Journal</Heading>     
+                {headers.map(obj=>(
+                    <Box margin='1rem' key={obj} width='90vw'>
+                        <Heading size='md' >
+                            {objetoteste[obj].Titulo}
+                        </Heading>
+                        
+                        <Heading size='xs'>
+                            {objetoteste[obj].data}
+                        </Heading>
+
+                        <Text>
+                            {objetoteste[obj].Texto}
+                        </Text>
+                    </Box>
+                ))}      
+            </Container>
+        </>
+      )
+  }
