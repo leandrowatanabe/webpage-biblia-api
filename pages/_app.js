@@ -1,15 +1,14 @@
+import { ChakraProvider } from '@chakra-ui/react'
+
 import '../styles/globals.css'
+import NavBar from '../components/navbar'
 
 function MyApp({ Component, pageProps }) {
-  return(
-    <div style={{
-      alignItems:"center",
-      justifyContent:"center",
-      display:"flex",
-      height:"100vh"
-    }}>
+  return (
+    <ChakraProvider>
+      <NavBar />
       <Component {...pageProps} />
-    </div>
+    </ChakraProvider>
   )
 }
 

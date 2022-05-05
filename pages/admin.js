@@ -1,10 +1,11 @@
 import { Container, Heading } from '@chakra-ui/react'
 
-export default function Home(){
+export default function Admin(){
 
     return(
         <Container display='flex' height='90vh' justifyContent='center' alignItems='center'>
-            <Heading size='lg'>Pagina em Construcao</Heading>
+            <Heading size='lg' fontSize='50px'>Admin</Heading>
+            <Heading size='sm'>Pagina em Construcao</Heading>
         </Container>
     )
 }
