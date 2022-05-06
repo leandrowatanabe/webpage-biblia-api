@@ -8,9 +8,11 @@ export default function Journal() {
     return (
         <>
             <Container display='flex-wrap' height='90vh' justifyContent='center' alignItems='center' margin='10px'>
+
                 <Heading size='2xl'>Journal</Heading>     
+                
                 {headers.map(obj=>(
-                    <Box margin='1rem' key={obj} width='90vw'>
+                    <Box margin='1rem' padding='0.5rem' key={obj} width='90vw'>
                         <Heading size='md' >
                             {objetoteste[obj].Titulo}
                         </Heading>
@@ -24,6 +26,7 @@ export default function Journal() {
                         </Text>
                     </Box>
                 ))}      
+
             </Container>
         </>
       )
