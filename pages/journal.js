@@ -18,7 +18,7 @@ export default function Journal() {
                         </Heading>
                         
                         <Heading size='xs'>
-                            {objetoteste[obj].data}
+                            {objetoteste[obj].data} - {objetoteste[obj].Autor}
                         </Heading>
 
                         <Text>
